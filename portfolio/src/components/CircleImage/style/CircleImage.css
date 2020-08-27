@@ -1,0 +1,13 @@
+.circle-image {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile_photo {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+.social_icons {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: auto;
+}
+
+.icon-social {
+  background: white;
+  border-radius: 50%;
+}
