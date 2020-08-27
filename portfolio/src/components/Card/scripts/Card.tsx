@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Imported Style
+import '../style/Card.css';
+
 // Imported Components
 import CircleImage from '../../CircleImage/scripts/CircleImage';
 import SocialIconRow from '../../SocialIconRow/scripts/SocialIconRow';

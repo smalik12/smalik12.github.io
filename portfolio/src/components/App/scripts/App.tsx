@@ -12,7 +12,9 @@ import Card from '../../Card/scripts/Card';
 function App() {
   return (
     <div className="App">
-      <Card profilePhoto={profilePhoto} />
+      <div className="top-container">
+        <Card profilePhoto={profilePhoto} />
+      </div>
     </div>
   );
 }
