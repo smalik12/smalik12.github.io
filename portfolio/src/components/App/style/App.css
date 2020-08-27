@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.top-container {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  background-image: url("../../../Images/galaxy_bg.jpg");
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+}
