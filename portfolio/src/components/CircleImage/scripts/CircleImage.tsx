@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Imported Styles
-import './CircleImage.css';
+import '../style/CircleImage.css';
 
 function CircleImage(props) {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Imported Styles
-import './App.css';
+import '../style/App.css';
 
 // Imported Images
 import profilePhoto from '../../../Images/profile_photo.jpeg';

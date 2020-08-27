@@ -39,7 +39,7 @@
 
 .background-view {
   display: flex;
-  background-image: url("Images/card_background.jpg");
+  background-image: url("../../../Images/card_background.jpg");
   background-size: contain;
   height: 200px;
   width: 350px;

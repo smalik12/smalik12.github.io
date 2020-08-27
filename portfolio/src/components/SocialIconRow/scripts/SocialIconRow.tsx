@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Imported Styles
-import './SocialIconRow.css'
+import '../style/SocialIconRow.css'
 
 // Imported Components
 import { SocialIcon } from 'react-social-icons';
