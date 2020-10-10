@@ -15,16 +15,6 @@ interface ICardProps extends PropsWithChildren<any> {
 }
 
 export const Card: React.FC<ICardProps> = (props: ICardProps) => {
-    const [data, setData] = useState<string[]|undefined>(undefined);
-
-    useEffect(() => {
-        setData(["1", "2", "3"]);
-    }, []);
-
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
-
     return (
         <div className="background-view">
             <div className="content-container">
