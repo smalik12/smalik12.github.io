@@ -7,7 +7,7 @@ import '../style/App.css';
 import profilePhoto from '../../../Images/profile_photo.jpeg';
 
 // Imported Components
-import Card from '../../Card/scripts/Card';
+import { Card } from '../../Card/scripts/Card';
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 // Imported Styles
 import '../style/SocialIconRow.css'
@@ -9,7 +9,9 @@ import { SocialIcon } from 'react-social-icons';
 // Imported Data
 import userData from "../../../user_data.json";
 
-function SocialIconRow() {
+interface ISocialIconRowProps extends PropsWithChildren<any> {}
+
+export const SocialIconRow: React.FC<ISocialIconRowProps> = (props: ISocialIconRowProps) => {
     return (
         <div className="social_icons">
             <SocialIcon className="icon-social" network="email" url={"mailto:" + userData.emailAddress} />
@@ -18,5 +20,3 @@ function SocialIconRow() {
         </div>
     );
 }
-
-export default SocialIconRow;

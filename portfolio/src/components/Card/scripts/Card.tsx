@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { PropsWithChildren, useState, useEffect } from 'react';
 
 // Imported Style
 import '../style/Card.css';
 
 // Imported Components
-import CircleImage from '../../CircleImage/scripts/CircleImage';
-import SocialIconRow from '../../SocialIconRow/scripts/SocialIconRow';
+import { CircleImage } from '../../CircleImage/scripts/CircleImage';
+import { SocialIconRow } from '../../SocialIconRow/scripts/SocialIconRow';
 
 // Imported Data
 import userData from '../../../user_data.json';
 
-function Card(props) {
+interface ICardProps extends PropsWithChildren<any> {
+    profilePhoto: string
+}
+
+export const Card: React.FC<ICardProps> = (props: ICardProps) => {
+    const [data, setData] = useState<string[]|undefined>(undefined);
+
+    useEffect(() => {
+        setData(["1", "2", "3"]);
+    }, []);
+
+    useEffect(() => {
+        console.log(data);
+    }, [data]);
+
     return (
         <div className="background-view">
             <div className="content-container">
@@ -27,5 +41,3 @@ function Card(props) {
         </div>
     )
 }
-
-export default Card;
