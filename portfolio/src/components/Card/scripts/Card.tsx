@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, useState, useEffect } from 'react';
+import React, { PropsWithChildren } from 'react';
 
 // Imported Style
 import '../style/Card.css';
