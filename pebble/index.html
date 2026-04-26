@@ -10,6 +10,7 @@
             --muted: #6b6b6b;
             --bg: #ffffff;
             --accent: #1A9E6E;
+            --rule: #e8e8e8;
         }
         @media (prefers-color-scheme: dark) {
             :root {
@@ -17,8 +18,10 @@
                 --muted: #a0a0a0;
                 --bg: #121212;
                 --accent: #4CD87A;
+                --rule: #2a2a2a;
             }
         }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
             color: var(--text);
@@ -26,23 +29,83 @@
             line-height: 1.6;
             max-width: 680px;
             margin: 0 auto;
-            padding: 96px 24px;
+            padding: 64px 24px 96px;
             -webkit-font-smoothing: antialiased;
         }
         h1 {
             font-size: 32px;
             font-weight: 700;
             letter-spacing: -0.01em;
-            margin: 0 0 12px;
+            margin: 0 0 8px;
         }
-        p { color: var(--muted); margin: 0 0 16px; }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 32px 0 8px;
+        }
+        .lede {
+            font-size: 17px;
+            color: var(--muted);
+            margin: 0 0 32px;
+        }
+        p, ul { margin: 0 0 16px; }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 4px; color: var(--muted); }
         a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--rule);
+            margin: 32px 0;
+        }
+        .footer {
+            margin-top: 48px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        .links {
+            margin-top: 24px;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 16px;
+        }
     </style>
 </head>
 <body>
-    <h1>Pebble</h1>
-    <p>The budget app built around your paychecks. Coming soon to the App Store.</p>
-    <p><a href="privacy.html">Privacy policy</a></p>
+
+<h1>Pebble</h1>
+<p class="lede">The budget app built around your paychecks.</p>
+
+<p>Most budgeting apps lump your whole month into one big number. Pebble splits everything by paycheck so you always know exactly what's available between now and your next deposit.</p>
+
+<p>No subscriptions. No ads. No bank login. Your data stays on your device.</p>
+
+<h2>Need help?</h2>
+
+<p>Email <a href="mailto:saqib.s.malik12@gmail.com">saqib.s.malik12@gmail.com</a> and I'll get back to you. Please include your iOS version and a brief description of what you're seeing.</p>
+
+<h2>Common questions</h2>
+
+<p><strong>Where does my data live?</strong><br>
+On your device. If you're signed into iCloud, Pebble syncs across your devices via your private iCloud container — Apple manages this; Pebble has no access to it.</p>
+
+<p><strong>What's in Pebble Pro?</strong><br>
+Unlimited cards and recurring expenses, full transaction history with year recap, multi-person splits, and CSV/PDF export. One-time $9.99 purchase — no subscription.</p>
+
+<p><strong>How do I restore a purchase on a new device?</strong><br>
+Open Settings → Pebble Pro → Restore Purchase. As long as you're signed into the same Apple ID, your Pro entitlement will reactivate.</p>
+
+<p><strong>Does Pebble connect to my bank?</strong><br>
+No. All entries are manual. This is intentional — your financial data never leaves your device.</p>
+
+<div class="links">
+    <a href="privacy.html">Privacy policy</a>
+</div>
+
+<hr>
+
+<p class="footer">Pebble &copy; 2026 Saqib Malik</p>
+
 </body>
 </html>
