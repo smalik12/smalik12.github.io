@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforge — Privacy Policy</title>
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #6b6b6b;
+            --bg: #ffffff;
+            --accent: #1E78DA;
+            --rule: #e8e8e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #e8e8e8;
+                --muted: #a0a0a0;
+                --bg: #121212;
+                --accent: #5BAEEA;
+                --rule: #2a2a2a;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Text", "Helvetica Neue", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 96px;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 0 0 8px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 32px 0 8px;
+            color: var(--text);
+        }
+        p, ul { margin: 0 0 16px; }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 4px; }
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+            margin: 0 0 32px;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: 600; }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--rule);
+            margin: 32px 0;
+        }
+        .footer {
+            margin-top: 48px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Reforge Privacy Policy</h1>
+<p class="updated">Last updated: April 27, 2026</p>
+
+<p>Reforge is a Windows rebuild assistant that runs on your device. It does not have a server, and it does not transmit your software inventory, snapshots, or diagnostics anywhere.</p>
+
+<h2>What Reforge does NOT collect</h2>
+
+<p>Reforge does not collect, transmit, or store on any external server:</p>
+<ul>
+    <li>Your name, email, or contact details</li>
+    <li>Your installed software inventory</li>
+    <li>Your snapshots, restore plans, or exports</li>
+    <li>Your diagnostic logs</li>
+    <li>Any analytics, telemetry, or crash reports</li>
+    <li>Advertising identifiers</li>
+</ul>
+
+<p>Reforge does not integrate with any third-party advertising networks, analytics providers, or remote logging services.</p>
+
+<h2>What Reforge processes locally</h2>
+
+<p>To produce a useful rebuild plan, Reforge reads the following from your device and stores it on your device only:</p>
+<ul>
+    <li>Installed-software metadata: names, versions, publishers, install locations, package-manager identifiers, uninstall information, and similar evidence captured from the Windows registry, WinGet, the Microsoft Store / AppX, Chocolatey, and Scoop</li>
+    <li>Snapshots and restore plans you create</li>
+    <li>Manual entries you add for software the scan could not detect</li>
+    <li>Local diagnostic logs about scan stages, adapter results, and any errors</li>
+    <li>App settings (such as your export directory and theme preference)</li>
+</ul>
+
+<p>A device's installed-software profile can be considered personal data under some privacy laws because it can reveal information about your activities, work tools, communications software, or media preferences. Reforge keeps this information on your device by design.</p>
+
+<h2>Where your data lives</h2>
+
+<p>Your data is stored locally on your device:</p>
+<ul>
+    <li>A local SQLite database in your Windows AppData directory (or, when installed from the Microsoft Store, in the app's packaged <code>LocalState</code> folder)</li>
+    <li>Local diagnostic logs in the same location</li>
+    <li>Exports you generate, in the export directory you choose (the default is also under your AppData)</li>
+</ul>
+
+<p>Reforge keeps this data on-device unless you explicitly export or share it. If you share an exported JSON, Markdown, HTML, or PowerShell file, you are responsible for reviewing its contents — exports may include software inventory and related metadata.</p>
+
+<h2>Third-party tools Reforge invokes</h2>
+
+<p>Reforge runs the following local tools and operating-system components when they are present:</p>
+<ul>
+    <li>The Windows registry (uninstall keys)</li>
+    <li>WinGet</li>
+    <li>PowerShell (for Microsoft Store / AppX enumeration)</li>
+    <li>Chocolatey</li>
+    <li>Scoop</li>
+</ul>
+
+<p>These tools are not controlled by Reforge and are subject to their own terms and privacy practices.</p>
+
+<h2>In-App Purchases</h2>
+
+<p>Reforge is a one-time purchase through the Microsoft Store. Microsoft handles all payment processing, refunds, and licensing through your Microsoft account. Reforge itself does not receive or store your payment information.</p>
+
+<h2>Children</h2>
+
+<p>Reforge is not directed at children under 13 and is not designed for use by children without supervision.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy changes, the &ldquo;Last updated&rdquo; date at the top of this page will be revised. The current version always lives at this URL.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy? Email: <a href="mailto:pebble.support@gmail.com">pebble.support@gmail.com</a></p>
+
+<hr>
+
+<p class="footer">Reforge &copy; 2026 Saqib Malik</p>
+
+</body>
+</html>
