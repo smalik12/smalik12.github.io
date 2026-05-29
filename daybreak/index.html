@@ -4,78 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daybreak — 75-Day Habit Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --text: #1a1a1a;
-            --muted: #6b6b6b;
-            --bg: #ffffff;
-            --accent: #C97D5F;
-            --rule: #e8e8e8;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --text: #e8e8e8;
-                --muted: #a0a0a0;
-                --bg: #121212;
-                --accent: #E59A7A;
-                --rule: #2a2a2a;
-            }
+            --ink:   oklch(0.58 0.16 248);
+            --ink-2: oklch(0.42 0.13 248);
+            --pearl: oklch(0.97 0.005 230);
+            --sand:  oklch(0.93 0.018 230);
+            --sky:   oklch(0.80 0.09 235);
+            --line:  oklch(0.58 0.16 248 / 0.18);
+            --sans:  "Geist", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+            --mono:  "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+            --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
         }
         * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-            color: var(--text);
-            background: var(--bg);
+            font-family: var(--sans);
+            background: var(--pearl);
+            color: var(--ink-2);
             line-height: 1.6;
             max-width: 680px;
             margin: 0 auto;
-            padding: 64px 24px 96px;
+            padding: 40px 28px 80px;
             -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            margin: 0 0 8px;
-        }
-        h2 {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 32px 0 8px;
-        }
-        .lede {
-            font-size: 17px;
-            color: var(--muted);
-            margin: 0 0 32px;
-        }
+        nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+        .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+        .mark-tile { width: 34px; height: 34px; border-radius: 8px; background: var(--ink); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -12px oklch(0.42 0.13 248 / 0.5); }
+        .mark-tile img { width: 66%; height: 66%; display: block; }
+        .wordmark { font-size: 17px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+        .nav-meta { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.6; color: var(--ink-2); }
+        .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); opacity: 0.6; }
+        header { padding: 44px 0 8px; }
+        h1 { font-family: var(--serif); font-weight: 500; font-size: 46px; line-height: 1.04; letter-spacing: -0.02em; color: var(--ink); margin: 14px 0 0; }
+        .lede { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.35; color: var(--ink); opacity: 0.9; margin: 14px 0 0; }
+        h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin: 40px 0 10px; }
         p, ul { margin: 0 0 16px; }
-        ul { padding-left: 22px; }
-        li { margin-bottom: 4px; color: var(--muted); }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        hr {
-            border: 0;
-            border-top: 1px solid var(--rule);
-            margin: 32px 0;
-        }
-        .footer {
-            margin-top: 48px;
-            color: var(--muted);
-            font-size: 14px;
-        }
-        .links {
-            margin-top: 24px;
-        }
-        .links a {
-            display: inline-block;
-            margin-right: 16px;
-        }
+        strong { font-weight: 600; color: var(--ink); }
+        a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+        a:hover { border-color: var(--ink); }
+        .links { margin-top: 32px; }
+        .links a { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px; }
+        .links a:hover { border-color: var(--ink); background: var(--sand); }
+        footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; }
+        footer a { color: var(--ink-2); border: 0; }
+        footer a:hover { color: var(--ink); }
     </style>
 </head>
 <body>
 
-<h1>Daybreak</h1>
-<p class="lede">75 days. One sunrise at a time.</p>
+<nav>
+    <a class="brand" href="../index.html">
+        <span class="mark-tile"><img src="../assets/clms-mark.svg" alt=""></span>
+        <span class="wordmark">CLMS</span>
+    </a>
+    <div class="nav-meta">Worth opening</div>
+</nav>
+
+<header>
+    <div class="eyebrow">Habit tracker · iOS</div>
+    <h1>Daybreak</h1>
+    <p class="lede">75 days. One sunrise at a time.</p>
+</header>
 
 <p>Daybreak is a 75-day habit tracker built around the rhythms most people actually keep. Pick 75 Soft, 75 Medium, or 75 Hard — or build your own challenge from scratch. Walk it alone, or invite up to five friends to walk alongside you.</p>
 
@@ -83,7 +76,7 @@
 
 <h2>Need help?</h2>
 
-<p>Email <a href="mailto:pebble.support@gmail.com">pebble.support@gmail.com</a> and I'll get back to you. Please include your iOS version and a brief description of what you're seeing.</p>
+<p>Email <a href="mailto:support@clmsstudio.com">support@clmsstudio.com</a> and we'll get back to you. Please include your iOS version and a brief description of what you're seeing.</p>
 
 <h2>Common questions</h2>
 
@@ -112,9 +105,11 @@ Settings → Developer → Wipe all data clears the local store. To also remove 
     <a href="privacy.html">Privacy policy</a>
 </div>
 
-<hr>
-
-<p class="footer">Daybreak &copy; 2026 Saqib Malik</p>
+<footer>
+    <span><a href="https://clmsstudio.com">clmsstudio.com</a></span>
+    <span><a href="../index.html">All apps ↗</a></span>
+    <span>Daybreak &copy; 2026 CLMS Studio</span>
+</footer>
 
 </body>
 </html>
