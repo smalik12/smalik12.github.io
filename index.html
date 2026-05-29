@@ -84,6 +84,8 @@
         }
         h1 em { font-style: italic; }
         h1 .accent { color: oklch(0.68 0.13 240); display: block; }
+        h1 .hero-br { display: none; }
+        @media (min-width: 600px) { h1 .hero-br { display: inline; } }
         .lede {
             font-size: 17px;
             color: var(--ink-2);
@@ -189,7 +191,7 @@
 
 <header>
     <div class="eyebrow">Independent software studio</div>
-    <h1>We make <em>small,</em> <em>well-formed</em> software. <span class="accent">Worth opening.</span></h1>
+    <h1>We make <em>small,</em><br class="hero-br"><em>well-formed</em> software. <span class="accent">Worth opening.</span></h1>
     <p class="lede">Private by default, no subscriptions, no accounts. Every CLMS app keeps your data on your device — and stays out of your way.</p>
 </header>
 
