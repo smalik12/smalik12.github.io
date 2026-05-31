@@ -3,112 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reforge — Windows Rebuild Assistant</title>
-    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+    <title>Reforge Support has moved — CLMS Studio</title>
+    <link rel="canonical" href="https://clmsstudio.com/apps/reforge/support">
+    <meta http-equiv="refresh" content="0; url=https://clmsstudio.com/apps/reforge/support">
+    <meta name="robots" content="noindex">
+    <script>location.replace("https://clmsstudio.com/apps/reforge/support");</script>
     <style>
-        :root {
-            --ink:   oklch(0.58 0.16 248);
-            --ink-2: oklch(0.42 0.13 248);
-            --pearl: oklch(0.97 0.005 230);
-            --sand:  oklch(0.93 0.018 230);
-            --sky:   oklch(0.80 0.09 235);
-            --line:  oklch(0.58 0.16 248 / 0.18);
-            --sans:  "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
-            --mono:  "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
-            --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
-        }
-        * { box-sizing: border-box; }
-        body {
-            font-family: var(--sans);
-            background: var(--pearl);
-            color: var(--ink-2);
-            line-height: 1.6;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 40px 28px 80px;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-        }
-        nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
-        .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-        .mark-tile { width: 34px; height: 34px; border-radius: 8px; background: var(--ink); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -12px oklch(0.42 0.13 248 / 0.5); }
-        .mark-tile img { width: 66%; height: 66%; display: block; }
-        .wordmark { font-size: 17px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
-        .nav-meta { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.6; color: var(--ink-2); }
-        .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); opacity: 0.6; }
-        header { padding: 44px 0 8px; }
-        h1 { font-family: var(--serif); font-weight: 500; font-size: 46px; line-height: 1.04; letter-spacing: -0.02em; color: var(--ink); margin: 14px 0 0; }
-        .lede { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.35; color: var(--ink); opacity: 0.9; margin: 14px 0 0; }
-        h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin: 40px 0 10px; }
-        p, ul { margin: 0 0 16px; }
-        strong { font-weight: 600; color: var(--ink); }
-        code { font-family: var(--mono); font-size: 0.88em; background: var(--sand); padding: 1px 5px; border-radius: 4px; }
-        a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
-        a:hover { border-color: var(--ink); }
-        .links { margin-top: 32px; }
-        .links a { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px; }
-        .links a:hover { border-color: var(--ink); background: var(--sand); }
-        footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; }
-        footer a { color: var(--ink-2); border: 0; }
-        footer a:hover { color: var(--ink); }
+        body { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; background: #f2f5f8; color: #3a5a78; line-height: 1.6; max-width: 480px; margin: 0 auto; padding: 80px 28px; text-align: center; }
+        a { color: #2e74b5; }
     </style>
 </head>
 <body>
-
-<nav>
-    <a class="brand" href="../index.html">
-        <span class="mark-tile"><img src="../assets/clms-mark.svg" alt=""></span>
-        <span class="wordmark">CLMS</span>
-    </a>
-    <div class="nav-meta">Worth opening</div>
-</nav>
-
-<header>
-    <div class="eyebrow">Rebuild assistant · Windows</div>
-    <h1>Reforge</h1>
-    <p class="lede">The Windows rebuild assistant for power users.</p>
-</header>
-
-<p>Reinstalling Windows usually means rebuilding your software setup from memory. Reforge scans what's installed across the registry, WinGet, the Microsoft Store, Chocolatey, and Scoop — then exports a runnable PowerShell script you can use on the next machine.</p>
-
-<p>No telemetry. No account. No cloud. Your inventory stays on your device.</p>
-
-<h2>Need help?</h2>
-
-<p>Email <a href="mailto:support@clmsstudio.com">support@clmsstudio.com</a> and we'll get back to you. Please include your Windows version and a brief description of what you're seeing.</p>
-
-<h2>Common questions</h2>
-
-<p><strong>Where does my data live?</strong><br>
-On your device. Reforge stores its inventory and snapshots in a local SQLite database under your AppData folder. Nothing is sent off the machine.</p>
-
-<p><strong>What does $19.99 get me?</strong><br>
-The full app: scanning across all five sources, snapshot history with diffs, manual entries for apps the scan can't find, and four export formats — JSON, Markdown, HTML, and a runnable PowerShell script. One-time purchase, no subscription, no recurring charges.</p>
-
-<p><strong>Does Reforge install apps for me?</strong><br>
-No. Reforge generates a PowerShell script that uses WinGet, Chocolatey, and Scoop to reinstall your apps. You run the script yourself on the new machine. This keeps you in control and means Reforge never elevates or runs anything destructive.</p>
-
-<p><strong>What sources does Reforge scan?</strong><br>
-Windows uninstall registry keys, WinGet, the Microsoft Store / AppX, Chocolatey, and Scoop. Each source is best-effort — if a tool isn't installed, that source is skipped and Reforge tells you why in the diagnostics.</p>
-
-<p><strong>Will it work on a corporate machine?</strong><br>
-Mostly. The registry scan always works. WinGet and Microsoft Store work in most environments. Chocolatey and Scoop scans only run if those tools are present. A restricted PowerShell ExecutionPolicy may limit how the generated script runs — Reforge prints the recommended invocation in the script header so you can pass it to your admin if needed.</p>
-
-<p><strong>Does Reforge connect to the internet?</strong><br>
-No. The app is fully local. It calls local CLIs (winget, choco, scoop, powershell) and reads the local registry. Nothing is transmitted.</p>
-
-<div class="links">
-    <a href="privacy.html">Privacy policy</a>
-</div>
-
-<footer>
-    <span><a href="https://clmsstudio.com">clmsstudio.com</a></span>
-    <span><a href="../index.html">All apps ↗</a></span>
-    <span>Reforge &copy; 2026 CLMS Studio</span>
-</footer>
-
+    <p>Reforge support has moved to
+    <a href="https://clmsstudio.com/apps/reforge/support">clmsstudio.com/apps/reforge/support</a>.</p>
+    <p>You&rsquo;ll be redirected automatically.</p>
 </body>
 </html>
